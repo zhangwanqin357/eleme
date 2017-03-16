@@ -98,7 +98,8 @@
 					this.$refs.picsList.style.width = width + 'px';
 					this.$nextTick(() => {
 						this.picScroll = new BScroll(this.$refs.picsWrapper, {
-							scrollX:true
+							scrollX:true,
+							eventPassthrough: 'vertical'
 						});
 					});
 				}
